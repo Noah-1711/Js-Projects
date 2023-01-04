@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .maincontainer{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 30%;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .child{
+            width: 25%;
+            height: 5%;
+            border: 2px black solid;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="maincontainer">
+        <div class="box">
+            <div class="child">
+                child 1
+            </div>
+            <div class="child">
+                child 2
+            </div>
+            <div class="child">
+                child 3
+
+            </div>
+            <div class="child">
+                child 4
+
+            </div>
+            <div class="child">
+                child 5
+
+            </div>
+            <div class="child">
+                child 6
+
+            </div>
+            <div class="child">
+                child 7
+
+            </div>
+            <div class="child">
+                child 8
+
+            </div>
+            <div class="child">
+                child 9
+
+            </div>
+            <div class="child">
+                child 10
+
+            </div>
+            <div class="child">
+                child 11
+
+            </div>
+            <div class="child">
+                child 12
+
+            </div>
+            <div class="child">
+                child 13
+
+            </div>
+            <div class="child">
+                child 14
+
+            </div>
+            <div class="child">
+                child 15
+
+            </div>
+            <div class="child">
+                child 16
+
+            </div>
+            <div class="child">
+                child 17
+
+            </div>
+          <button onclick= color() type="submit">click me</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        function color(){
+            var temp= document.getElementsByClassName("child")
+            console.log(temp);
+            for( let i=0;i<temp.length;i++){
+                if(i%2==1){
+                    temp[i].setAttribute("style","background-color:lime");
+                    temp[i].style.color = 'white';
+                }
+            }
+            temp[0].setAttribute("style","background-color:blue");
+            temp[0].style.color = 'white';
+            temp[temp.length-1].setAttribute("style","background-color:palevioletred ");
+            temp[temp.length-1].style.color = 'white';
+
+            temp[8].setAttribute("style","background-color:green  ");
+            temp[8].style.color = 'white';
+            
+
+
+
+
+        }
+      
+
+
+
+    </script>
+    
+</body>
+</html>

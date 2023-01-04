@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100vw;
+        height: 100vh;
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #1abc9c;
+    }
+    .Userdetails{
+        border: 2px solid gray;
+        width: 30%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        background-color: #fefefe;
+    }
+    .maincards{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+     
+}
+::-webkit-scrollbar {
+    display: none;
+    }
+    input{
+        width: 80%;
+        height: 15%;
+    }
+    ::placeholder{
+        padding: 0.5rem;
+    }
+    button{
+        width: 30%;
+        height: 15%;
+        background-color: #1b9d83;
+        border: gray;
+        color: white;
+    }
+
+    .usercards{
+        width: 30%;
+        height: 60%;
+        background-color: #08483c;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 1rem;
+        color: white;
+        
+
+    }
+    
+
+</style>
+<body>
+    <div class="Userdetails">
+        <input  id="username" placeholder="Name" type="text">
+        <input  id="usernum" placeholder="Ph.number" type="number">
+        <input  id="usermail" placeholder="Email" type="email">
+        <button  onclick ="adddetails()" type =submit>Add User</button>
+    </div>
+ 
+
+    <script>
+           var maincards = document.createElement("div")
+           maincards.classList.add("maincards")
+
+        function adddetails(){
+            
+            var username=document.getElementById("username").value
+             var usernum=document.getElementById("usernum").value
+             var usermail=document.getElementById("usermail").value
+           
+            var div = document.createElement("div")
+            div.classList.add("usercards")
+            var name =document.createElement("h3")
+            var number =document.createElement("h3")
+            var email =document.createElement("h3")
+
+            div.appendChild(name)
+            div.appendChild(number)
+            div.appendChild(email)
+
+            
+            var nametext= "Name :   "  +username
+            var numbertext= "Ph.Number :  "  +usernum
+            var mailtext= "Email :  "  +usermail
+
+            name.innerHTML=nametext
+            number.innerHTML=numbertext
+            email.innerHTML=mailtext
+
+
+               maincards.appendChild(div)
+            document.body.appendChild(maincards)
+            document.getElementById("username").value=""
+            document.getElementById("usernum").value=""
+            document.getElementById("usermail").value=""
+          
+            
+
+          
+
+
+
+        }
+
+    
+
+    </script>
+    
+</body>
+</html>
