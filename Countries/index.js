@@ -16,11 +16,11 @@ const clear = document.getElementById("graph")
 
 function population(){
     clear.innerHTML=" "
+   
     temmost.innerHTML="10 most Populated counties in the World"
 
     for(let i=0;i<10;i++){
         var div= document.createElement("div")
-        console.log(div)
         div.style.width="70%"
         div.style.height="9%"
         div.style.display="flex"
@@ -43,7 +43,6 @@ function population(){
 
 
         var bar=document.createElement("div")
-        console.log(bar)
         bar.style.height="70%"
         bar.style.width="30%"
         div.appendChild(bar)
@@ -85,29 +84,25 @@ function population(){
 
 function languages(){
     clear.innerHTML=" "
+    
     temmost.innerHTML="10 most Spoken languages in the World"
     var languageArray=[]
     for(let i=0;i<countries_data.length;i++){
         languageArray.push(countries_data[i].languages)
     }
-    console.log(languageArray)
 
     var flatArray= languageArray.flat()
-    console.log(flatArray)
 
     var countlang={}
     flatArray.map((ele) => {
         countlang[ele]= (countlang[ele]||0)+1
     })
     
-    console.log(countlang)
     var objarray= Object.entries(countlang)
-    console.log(objarray)
 
     var sortedlangcount=objarray.sort(function(a,b){
         return b[1]-a[1]
     })
-    console.log(sortedlangcount)
     
 
     for(let i=0;i<10;i++){
@@ -135,7 +130,6 @@ function languages(){
 
 
         var bar=document.createElement("div")
-        console.log(bar)
         bar.style.height="70%"
         bar.style.width="30%"
         div.appendChild(bar)
