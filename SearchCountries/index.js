@@ -9,6 +9,8 @@ countries_data.map((ele) => {
 })
 console.log(cname)
 
+var result = document.getElementById("result")
+result.innerHTML += ` <div class="alert"> Please Enter Country name</div>`
 
 
 function startword() {
