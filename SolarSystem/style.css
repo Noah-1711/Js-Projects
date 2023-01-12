@@ -38,9 +38,11 @@ input{
     height: 35%;
     margin: 0.3rem;
     padding-left: 0.3rem;
+    outline: none;
+
 }
 select{
-    width: 10%;
+    width: 15%;
     height: 35%;
     margin: 0.3rem;
     padding-left: 0.3rem;
@@ -69,7 +71,7 @@ button{
     justify-content: space-around;
     align-items: center;
     background-color: gray;
-    opacity: 0.4;
+    opacity: 0.5;
 
 }
 .imgcontent{
@@ -95,3 +97,149 @@ button{
     align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+   
+    h1{
+        font-size: 1rem;
+        color: white;
+    }
+    .inputs{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 35%;
+        height: 35%;
+        margin: 0.3rem;
+        padding-left: 0.3rem;
+        outline: none;
+    
+    }
+    select{
+        width: 30%;
+        height: 35%;
+        margin: 0.3rem;
+        padding-left: 0.3rem;
+    
+    
+    }
+    button{
+        width: 20%;
+        height: 35%;
+        margin: 0.3rem;
+    
+    }
+    .content{
+        width: 90%;
+        flex-direction: column;
+    
+    }
+    .imgcontent{
+        width: 80%;
+        height: 100%;
+    }
+    .wtcontent{
+        width: 100%;
+        height: 40%;
+       font-size: 0.9rem;
+       
+      
+    }
+  }
+  @media screen and (min-width: 481px) and (max-width: 786px) {
+  
+     h1{
+      font-size: 1.5rem;
+    }
+    .inputs{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 30%;
+        height: 35%;
+        margin: 0.3rem;
+        padding-left: 0.3rem;
+        outline: none;
+    
+    }
+    select{
+        width: 25%;
+        height: 35%;
+        margin: 0.3rem;
+        padding-left: 0.3rem;
+    
+    
+    }
+    button{
+        width: 15%;
+        height: 35%;
+        margin: 0.3rem;
+    
+    }
+    .content{
+        width: 90%;
+        flex-direction: column;
+    
+    }
+    .imgcontent{
+        width: 80%;
+        height: 100%;
+    }
+    .wtcontent{
+        width: 100%;
+        height: 40%;
+       font-size: 0.9rem;
+       
+      
+    }
+  }
+  @media screen and (min-width: 787px) and (max-width: 1024px) {
+   
+     h1{
+      font-size: 2rem;
+    }
+    .inputs{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    input{
+        width: 25%;
+        height: 35%;
+        margin: 0.3rem;
+        padding-left: 0.3rem;
+        outline: none;
+    
+    }
+    select{
+        width: 20%;
+        height: 35%;
+        margin: 0.3rem;
+        padding-left: 0.3rem;
+    
+    
+    }
+    button{
+        width: 10%;
+        height: 35%;
+        margin: 0.3rem;
+    
+    }
+  }
+  /* @media screen and (min-width: 1025px) and (max-width: 1300px) {
+    body {
+        border: 5px solid orange;
+    }
+     h1{
+      font-size: 2.5rem;
+    }
+  } */

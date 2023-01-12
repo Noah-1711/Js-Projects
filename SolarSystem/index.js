@@ -66,8 +66,12 @@ function calculate() {
         wtpara.innerHTML = `the weight of the object ${select.options[index].innerHTML}`
         weightdiv.appendChild(wtpara)
         var wtval = document.createElement("h2")
-        wtval.innerHTML = `${weight}`
+        wtval.innerHTML = `${weight.toFixed(2)} W`
         weightdiv.appendChild(wtval)
+
+       document.getElementById("mass").value=""
+        
+
     
     }
 
