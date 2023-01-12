@@ -41,6 +41,7 @@ function calculate() {
         alert.appendChild(h1)
         h1.innerText=`"Mass is Required"`
         h1.style.color="black"
+        h1.style.backgroundColor="white"
 
     }
     else{
