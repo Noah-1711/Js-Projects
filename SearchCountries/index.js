@@ -10,7 +10,13 @@ countries_data.map((ele) => {
 console.log(cname)
 
 var result = document.getElementById("result")
-result.innerHTML += ` <div class="alert"> Please Enter Country name</div>`
+countries_data.map((ele)=>{
+    result.innerHTML += ` <div class="resultdiv"> ${ele.name}</div>`
+
+})
+
+
+
 
 
 function startword() {
@@ -22,13 +28,7 @@ function startword() {
     result.innerHTML = ""
     console.log("startword")
     var input = document.getElementById("input").value
-    if (input == "") {
-
-        result.innerHTML += ` <div class="alert"> Please Enter Country name</div>`
-
-
-    }
-    else {
+   
         console.log(input)
         var namearr = []
         cname.map((ele) => {
@@ -53,7 +53,7 @@ function startword() {
 
     }
 
-}
+
 function searchanyword() {
     var btnstart= document.getElementById("input")
     btnstart.setAttribute("onkeyup","searchanyword()")
